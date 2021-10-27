@@ -1,8 +1,9 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler,InlineQueryHandler, Filters,CallbackContext
 from telegram import Update, Bot
 from datetime import date
+import os
 
-TOKEN = '2037652357:AAGJwNlXY2WBCeQTYNtEBbkmAxWbDjQ-zTg'
+TOKEN = os.environ.get('token')
 mybot = Bot(TOKEN)
 d=date.today()
 d=str(d)
