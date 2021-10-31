@@ -43,6 +43,9 @@ async def handler(event):
           print(temp)
           c=str(temp)
           await event.reply(c)
+     if event.raw_text=='/reset':
+          cur.execute(f"DELETE FROM ATTENDENCE WHERE ID = {S}")
+          conn.commit()
           
         # rows = cur.fetchall()
         
