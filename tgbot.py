@@ -41,6 +41,8 @@ async def handler(event):
           cur.execute(f"SELECT TD,PD FROM ATTENDENCE WHERE ID = {s}")
           temp=cur.fetchall()
           print(temp)
+          c=str(temp)
+          await event.reply(c)
           
         # rows = cur.fetchall()
         
