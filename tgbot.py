@@ -44,7 +44,7 @@ async def handler(event):
           c=str(temp)
           await event.reply(c)
      if event.raw_text=='/reset':
-          cur.execute(f"DELETE FROM ATTENDENCE WHERE ID = {S}")
+          cur.execute(f"DELETE FROM ATTENDENCE WHERE ID = {s}")
           conn.commit()
           
         # rows = cur.fetchall()
